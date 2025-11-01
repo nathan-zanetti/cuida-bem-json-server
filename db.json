@@ -1,0 +1,198 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Ana Souza",
+      "email": "ana.souza@example.com",
+      "senha": "123456",
+      "endereco": "Rua das Flores, 120 - São Paulo, SP",
+      "idade": 34,
+      "sexo": "Feminino"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Mendes",
+      "email": "carlos.mendes@example.com",
+      "senha": "123456",
+      "endereco": "Av. Brasil, 450 - Rio de Janeiro, RJ",
+      "idade": 42,
+      "sexo": "Masculino"
+    },
+    {
+      "id": 3,
+      "name": "Julia Ferreira",
+      "email": "julia.ferreira@example.com",
+      "senha": "123456",
+      "endereco": "Rua Bela Vista, 87 - Belo Horizonte, MG",
+      "idade": 28,
+      "sexo": "Feminino"
+    }
+  ],
+
+  "perfil_familiar": [
+    { "id": 1, "nome": "Pedro Souza", "parentesco": "Filho" },
+    { "id": 2, "nome": "Mariana Mendes", "parentesco": "Esposa" },
+    { "id": 3, "nome": "Lucas Ferreira", "parentesco": "Irmão" }
+  ],
+
+  "categoria_compromisso": [
+    { "id": 1, "descricao": "Consulta Médica" },
+    { "id": 2, "descricao": "Exame" },
+    { "id": 3, "descricao": "Retorno" }
+  ],
+
+  "lembretes": [
+    { "id": 1, "descricao": "Beber bastante água", "unidade": "diário" },
+    { "id": 2, "descricao": "Evitar alimentos gordurosos", "unidade": "diário" },
+    { "id": 3, "descricao": "Fazer alongamento antes do treino", "unidade": "diário" }
+  ],
+
+  "compromissos": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "horario": "2025-11-02T10:00:00",
+      "categoria_id": 1,
+      "especialidade": "Dermatologia",
+      "lembrete_id": 1,
+      "perfil_familiar_id": 1,
+      "observacao": "Consulta para revisão de manchas na pele"
+    },
+    {
+      "id": 2,
+      "usuario_id": 2,
+      "horario": "2025-11-03T15:30:00",
+      "categoria_id": 2,
+      "especialidade": "Cardiologia",
+      "lembrete_id": 2,
+      "perfil_familiar_id": 2,
+      "observacao": "Exame de rotina - ECG"
+    },
+    {
+      "id": 3,
+      "usuario_id": 3,
+      "horario": "2025-11-05T09:00:00",
+      "categoria_id": 3,
+      "especialidade": "Oftalmologia",
+      "lembrete_id": 3,
+      "perfil_familiar_id": 3,
+      "observacao": "Retorno da consulta anterior"
+    }
+  ],
+
+  "medicamentos": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "category_id": 1,
+      "nome": "Paracetamol 500mg",
+      "tipo": "Comprimido",
+      "dosagem": "1 comprimido a cada 8h",
+      "comentario": "Usar apenas se houver dor",
+      "alarme_ativo": true,
+      "perfil_familiar_id": 1
+    },
+    {
+      "id": 2,
+      "usuario_id": 2,
+      "category_id": 1,
+      "nome": "Losartana 50mg",
+      "tipo": "Comprimido",
+      "dosagem": "1 comprimido pela manhã",
+      "comentario": "Controle de pressão arterial",
+      "alarme_ativo": true,
+      "perfil_familiar_id": 2
+    },
+    {
+      "id": 3,
+      "usuario_id": 3,
+      "category_id": 2,
+      "nome": "Amoxicilina 500mg",
+      "tipo": "Cápsula",
+      "dosagem": "1 cápsula a cada 8h por 7 dias",
+      "comentario": "Antibiótico prescrito para infecção respiratória",
+      "alarme_ativo": true,
+      "perfil_familiar_id": 3
+    }
+  ],
+
+  "alarme_frequencia": [
+    { "id": 1, "frequencia": "8", "unidade": "horas" },
+    { "id": 2, "frequencia": "12", "unidade": "horas" },
+    { "id": 3, "frequencia": "24", "unidade": "horas" }
+  ],
+
+  "alarmes": [
+    {
+      "id": 1,
+      "medicamento_id": 1,
+      "horario": "08:00",
+      "frequencia_id": 1
+    },
+    {
+      "id": 2,
+      "medicamento_id": 2,
+      "horario": "07:00",
+      "frequencia_id": 3
+    },
+    {
+      "id": 3,
+      "medicamento_id": 3,
+      "horario": "09:00",
+      "frequencia_id": 1
+    }
+  ],
+
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Dr. Ricardo Lima",
+      "especialidade": "Dermatologista",
+      "clinica": "Clínica Pele Saudável",
+      "endereco": "Rua das Oliveiras, 300 - São Paulo",
+      "telefone": "(11) 91234-5678",
+      "perfil_familiar_id": 1,
+      "comentario": "Consulta de rotina"
+    },
+    {
+      "id": 2,
+      "nome": "Dra. Helena Castro",
+      "especialidade": "Cardiologista",
+      "clinica": "Instituto do Coração",
+      "endereco": "Av. das Américas, 890 - Rio de Janeiro",
+      "telefone": "(21) 99876-4321",
+      "perfil_familiar_id": 2,
+      "comentario": "Exames cardíacos"
+    },
+    {
+      "id": 3,
+      "nome": "Dr. Paulo Rocha",
+      "especialidade": "Oftalmologista",
+      "clinica": "Visão Clínica",
+      "endereco": "Rua Esperança, 77 - Belo Horizonte",
+      "telefone": "(31) 98855-2233",
+      "perfil_familiar_id": 3,
+      "comentario": "Acompanhamento oftalmológico"
+    }
+  ],
+
+  "permissoes": [
+    { "id": 1, "type": "leitura", "active": true },
+    { "id": 2, "type": "edição", "active": true }
+  ],
+
+  "compartilhamentos": [
+    {
+      "id": 1,
+      "usuario_compartilhado": 1,
+      "usuario_acessando": 2,
+      "permissao_id": 1
+    },
+    {
+      "id": 2,
+      "usuario_compartilhado": 2,
+      "usuario_acessando": 3,
+      "permissao_id": 2
+    }
+  ]
+}
