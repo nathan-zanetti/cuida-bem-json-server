@@ -1,11 +1,12 @@
 {
-  "dependencies": {
-    "json-server": "^0.17.3"
-  },
   "name": "cuida-bem-json-server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3",
+    "jsonwebtoken": "^9.0.0"
   }
 }
